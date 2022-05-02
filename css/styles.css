@@ -250,6 +250,34 @@ margin-left: 93px;
     margin-left: 30px;
 }
 
+.images-item {
+    position: relative;
+    display: inline-block;
+    width: 370px;
+    height: 294px;
+}
+
+.images-text {
+    position: absolute;
+    display: flex;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    
+    width: 370px;
+    height: 70px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    
+    color: #FFFFFF;
+    background-color: rgba(47, 48, 58, 0.8);
+}
+
 /* Дані про виконавців */
 
 .workers {
@@ -362,7 +390,7 @@ margin-left: 93px;
 
     font-weight: 700;
     font-size: 36px;
-    line-height: 1,16;
+    line-height: 1.16;
     text-align: center;
     letter-spacing: 0.03em;
     
@@ -408,11 +436,6 @@ margin-left: 93px;
 .client-logo {
     fill: currentColor;
 }
-
-/* .client-link:hover,
-.client-link:focus {
-    color: var(--accent-color);
-} */
 
 /* ПІДВАЛ */
 
@@ -505,6 +528,55 @@ address {
     background-color: var(--accent-color);
 }
 
+/* Модальне вікно */
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.is-hidden {
+    visibility: hidden;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.modal {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 528px;
+    height: 581px;
+
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.modal-close {
+    display: flex;
+    margin-left: auto;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8px;
+    margin-top: 8px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.modal-close-button {
+    width: 11px;
+    height: 11px;
+    fill: rgb(0, 0, 0);
+}
+
 /* ПОРТФОЛИО СТИЛІЗАЦІЯ ОСНОВНОГО КОНТЕНТУ */
 
 .section-portfolio {
@@ -579,6 +651,35 @@ address {
 
 .poster-item:nth-last-child(-n+3) {
     margin-bottom: 0px;
+}
+
+.poster-animation {
+    position: relative;
+}
+
+.poster-animation::before {
+    background-color: rgba(33, 150, 243, 0.9);
+}
+
+.poster-description {
+    position: absolute;
+    /* left: 50%;
+    top: 50%;
+    transform: (-50%, -50%); */
+    display: flex;
+    margin: 63px 24px;
+    align-items: center;
+    justify-content: center;
+
+    max-width: 322px;
+    max-height: 168px;
+
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+
+    opacity: 1;
 }
 
 .poster-info {

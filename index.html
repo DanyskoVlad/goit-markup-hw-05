@@ -27,7 +27,7 @@
             <ul class="contact-list">
                 <li class="contact-name">
                     <a class="contact-info" href="mailto:info@devstudio.com">
-                        <svg class="contact-icon" width="16" height="12">
+                        <svg class="contact-icon" width="22" height="16">
                             <use href="./images/sprite.svg#icon-iconmail"></use>
                         </svg>
                         info@devstudio.com
@@ -36,7 +36,7 @@
                 <li class="contact-name">
                     
                     <a class="contact-info" href="tel:+380961111111">
-                        <svg class="contact-icon" width="10" height="16">
+                        <svg class="contact-icon" width="14" height="20">
                             <use href="./images/sprite.svg#icon-iconphone"></use>
                         </svg>
                         +38 096 111 11 11
@@ -51,7 +51,7 @@
             <section class="hero">
                 <div class="container">
                     <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                    <button type="button" class="button">Заказать услугу</button>
+                    <button type="button" class="button" data-modal-open>Заказать услугу</button>
                 </div>
             </section>
         <!-- Блок загальної інформації -->
@@ -110,14 +110,17 @@
                 <h2 class="section-image">Чем мы занимаемся</h2>
                 <ul class="images-list">
                     <li class="images-item">
+                        <p class="images-text">Десктопные приложения</p>
                         <img class="images-image" src="./images/boxone.jpg" alt="фото планшета с клавиатурой" width="370">
                     </li>
                 
                     <li class="images-item">
+                        <p class="images-text">Мобильные приложения</p>
                         <img class="images-image" src="./images/boxtwo.jpg" alt="фото планшета с клавиатурой" width="370">
                     </li>
                 
                     <li class="images-item">
+                        <p class="images-text">Дизайнерские решения</p>
                         <img class="images-image" src="./images/boxthree.jpg" alt="фото планшета с клавиатурой" width="370">
                     </li>
                 </ul>
@@ -407,6 +410,17 @@
                 
         </div>
     </footer>
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+
+    <button type="button" class="modal-close" data-modal-close>
+        <svg class="modal-close-button" width="11" height="11">
+            <use href="./images/Vector.svg"></use>
+        </svg>
+    </button>
+    </div>
+</div>
+<script src="./js/modal.js"></script>
 </body>
 </html>
 
